@@ -16,7 +16,8 @@ jobs:
           python-version: '3.12'
           
       - name: 安装依赖库
-        run: pip install yfinance
+        run: pip install yfinance pandas
         
       - name: 运行股票监控脚本
         run: python stock.py
+        
