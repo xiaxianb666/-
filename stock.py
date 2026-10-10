@@ -75,7 +75,7 @@ def ask_ai_portfolio_manager(all_data_text):
 5. 结尾必须加上免责声明：本报告由AI自动生成，仅供数据学习研究，不构成任何真实投资建议。
 """
     payload = {
-        "model": "llama3-70b-8192",
+        "model": "llama-3.3-70b-versatile", # 这里已经换成了 Groq 目前最强模型
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0.7
     }
