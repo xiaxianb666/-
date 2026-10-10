@@ -20,3 +20,5 @@ jobs:
         
       - name: 运行股票监控脚本
         run: python stock.py
+        env:
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
