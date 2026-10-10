@@ -15,10 +15,10 @@ jobs:
         with:
           python-version: '3.12'
           
-      - name: 安装依赖库
+      - name: Install dependencies
         run: pip install yfinance pandas requests
         
-      - name: 运行股票监控脚本
+      - name: Run stock script
         run: python stock.py
         env:
           AI_API_KEY: ${{ secrets.AI_API_KEY }}
